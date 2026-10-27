@@ -16,23 +16,6 @@ document.addEventListener('keydown', event => {
     menuButton.focus();
   }
 });
-const publications = [...document.querySelectorAll('.publication')];
-document.querySelectorAll('.filter').forEach(button => {
-  button.addEventListener('click', () => {
-    document.querySelectorAll('.filter').forEach(filter => {
-      const active = filter === button;
-      filter.classList.toggle('active', active);
-      filter.setAttribute('aria-pressed', String(active));
-    });
-    let count = 0;
-    publications.forEach(publication => {
-      const show = button.dataset.filter === 'all' || publication.dataset.category === button.dataset.filter;
-      publication.hidden = !show;
-      if (show) count += 1;
-    });
-    document.querySelector('.publication-count').textContent = `${count} publication${count === 1 ? '' : 's'}`;
-  });
-});
 if ('IntersectionObserver' in window) {
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {

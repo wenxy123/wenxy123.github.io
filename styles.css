@@ -130,3 +130,17 @@
 @media(max-width:1100px) and (min-width:761px){.hero{grid-template-columns:minmax(0,1.2fr) minmax(0,1.4fr)}.hero .portrait-block{flex-basis:108px;width:108px;max-width:108px}.hero .portrait-frame{border-radius:57.6px 57.6px 2px 2px}}
 @media(max-width:760px){.hero{grid-template-columns:1fr}.hero .portrait-block{flex-basis:120px;width:120px;max-width:120px}.hero .portrait-frame{border-radius:62.4px 62.4px 2px 2px}.profile-heading h1{font-size:36px;letter-spacing:-1.2px}.contact-simple{font-size:13px;padding-top:30px;padding-bottom:30px}}
 @media(max-width:370px){.hero .portrait-block{flex-basis:102px;width:102px;max-width:102px}.profile-heading{gap:14px}.profile-heading h1{font-size:28px;letter-spacing:-1px}.profile-heading .chinese{font-size:15px}.profile-links{gap:10px;font-size:9px}}
+
+/* Compact academic citations with inline publication links. */
+.citation-group + .citation-group{margin-top:42px}
+.citation-group h3{font-family:var(--serif);font-size:26px;line-height:1.35;font-weight:400;letter-spacing:-.4px;padding-bottom:12px;border-bottom:1px solid var(--line);margin:0 0 22px}
+.citation-list{margin:0;padding-left:28px;font-family:var(--serif);font-size:18px;line-height:1.75}
+.citation-list li{padding-left:5px;overflow-wrap:break-word}
+.citation-list li+li{margin-top:20px}
+.citation-list li::marker{font-weight:700;color:var(--teal)}
+.citation-list strong{font-weight:700}
+.citation-links{white-space:nowrap;font-family:var(--sans);font-size:.74em}
+.citation-links a{color:var(--teal);text-decoration:underline;text-underline-offset:3px;text-decoration-color:#b2c4bb}
+.citation-links a+a{margin-left:5px}
+.citation-links a:hover{color:var(--rust);text-decoration-color:currentColor}
+@media(max-width:760px){.citation-group h3{font-size:23px;margin-bottom:18px}.citation-group+.citation-group{margin-top:32px}.citation-list{font-size:16px;line-height:1.7;padding-left:23px}.citation-list li{padding-left:3px}.citation-list li+li{margin-top:18px}}
