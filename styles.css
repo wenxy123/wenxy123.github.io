@@ -144,3 +144,28 @@
 .citation-links a+a{margin-left:5px}
 .citation-links a:hover{color:var(--rust);text-decoration-color:currentColor}
 @media(max-width:760px){.citation-group h3{font-size:23px;margin-bottom:18px}.citation-group+.citation-group{margin-top:32px}.citation-list{font-size:16px;line-height:1.7;padding-left:23px}.citation-list li{padding-left:3px}.citation-list li+li{margin-top:18px}}
+
+/* Use the publication section's academic typography throughout the profile. */
+body{background:var(--white)}
+.site-header{background:rgba(255,255,255,.97)}
+.hero-about h2{font-family:var(--serif);font-size:26px;line-height:1.35;font-weight:400;letter-spacing:-.4px;padding-bottom:12px;border-bottom:1px solid var(--line);margin:0 0 22px}
+.hero-about>p{font-family:var(--serif);font-size:18px;line-height:1.75}
+.hero-about>p+p{margin-top:20px}
+.history-section,.research-summary,.contact-simple{padding-top:88px;padding-bottom:88px}
+.research-summary{border-bottom:1px solid var(--line)}
+.research-summary h2.eyebrow{font-family:var(--sans);font-size:10px;font-weight:600;line-height:1.7;letter-spacing:1.8px;margin:0 0 28px}
+.research-bullets{font-family:var(--serif);font-size:18px;line-height:1.75;padding-left:28px;margin:0;max-width:none}
+.research-bullets li{padding-left:5px}
+.research-bullets li+li{margin-top:20px}
+.research-bullets strong{font-weight:700;color:var(--ink)}
+.contact-simple>p{font-family:var(--serif);font-size:18px;line-height:1.75}
+@media(max-width:760px){
+  .hero-about h2{font-size:23px;margin-bottom:18px}
+  .hero-about>p{font-size:16px;line-height:1.7}
+  .hero-about>p+p{margin-top:18px}
+  .history-section,.research-summary,.contact-simple{padding-top:55px;padding-bottom:55px}
+  .research-bullets{font-size:16px;line-height:1.7;padding-left:23px}
+  .research-bullets li{padding-left:3px}
+  .research-bullets li+li{margin-top:18px}
+  .contact-simple>p{font-size:16px;line-height:1.7}
+}
